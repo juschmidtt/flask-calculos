@@ -3,8 +3,8 @@ Content-Type: application/json
 
 {
 
-"numero1":299,
-"numero2": 1
+"numero1":5,
+"numero2": 5
 
 }
 
@@ -14,4 +14,16 @@ GET http://localhost:5000/calculos
 
 ###
 
-DELETE http://localhost:5000//deletar/5fec6ff3-4b40-4627-a7c6-0afad49ce883
+DELETE http://localhost:5000//deletar/bead04d6-15d8-4488-af56-7fe70f103d75
+
+###
+
+PUT http://localhost:5000//editar/3f36d4aa-080d-4b3e-99b9-7805b3ce4fdb
+Content-Type: application/json
+
+{
+
+"numero1":7,
+"numero2": 7
+
+}
