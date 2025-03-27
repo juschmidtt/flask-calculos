@@ -1,4 +1,5 @@
 from flask import Flask, request
+import uuid
 
 app = Flask(__name__)
 
@@ -26,7 +27,7 @@ def calculos():
 
 @app.route("/deletar/<id>", methods=["DELETE"])
 def deletar_item(id):
-    global lista_calculos
-    lista_calculos = [d for d in lista_calculos if d.get ('id') != id]
+    global historico
+    historico = [d for d in historico if d.get ('id') != id]
 
     return{}
